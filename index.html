@@ -3,8 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Claimanage | Claims Management Experts</title>
-  <meta name="description" content="Claimanage provides professional insurance claim review, claim management, negotiation, dispute support and AFCA complaint management." />
+
+  <!-- ✅ SEO: Title + Description (clean, not repetitive) -->
+  <title>Claimanage | Insurance Claim Management & Dispute Support</title>
+  <meta name="description" content="Claimanage provides professional insurance claim review, claim management, negotiation, dispute support, and AFCA complaint management. Motor, home & property, third party, rideshare, and business/fleet claims." />
+
+  <!-- ✅ SEO: Canonical (helps Google understand the main URL) -->
+  <link rel="canonical" href="https://www.claimanage.com/" />
+
+  <!-- ✅ SEO: Indexing instructions -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ SEO: Keywords (not critical, but harmless) -->
+  <meta name="keywords" content="claims management, insurance claim management, claim review, dispute support, AFCA complaint, motor claim help, property claim help, third party claim, rideshare insurance claim, claim negotiation, Australia" />
+
+  <!-- ✅ FAVICON: Replace the earth icon with your logo -->
+  <!-- Upload favicon.png to the same folder as index.html -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <!-- Optional sizes (if you upload them) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <!-- Apple iPhone icon (optional if you upload apple-touch-icon.png) -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <!-- ✅ Social preview (when someone shares your link on WhatsApp/Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Claimanage" />
+  <meta property="og:title" content="Claimanage | Insurance Claim Management & Dispute Support" />
+  <meta property="og:description" content="Professional insurance claim review, claim management, negotiation, dispute support and AFCA complaint management." />
+  <meta property="og:url" content="https://www.claimanage.com/" />
+  <!-- If you have a social-share image, upload it and uncomment below -->
+  <!-- <meta property="og:image" content="https://www.claimanage.com/og-image.png" /> -->
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Claimanage | Insurance Claim Management & Dispute Support" />
+  <meta name="twitter:description" content="Professional insurance claim review, claim management, negotiation, dispute support and AFCA complaint management." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,24 +80,30 @@
     h2{font-size:30px;letter-spacing:-.02em;}
     p{color:var(--muted);}
 
+    /* ✅ Accessibility improvement for keyboard users */
+    a:focus, button:focus, input:focus, textarea:focus, select:focus, summary:focus {
+      outline: 3px solid rgba(47,111,95,.35);
+      outline-offset: 2px;
+    }
+
     /* ===== HEADER (CLEAN + LOGO WORKS FROM ROOT) ===== */
     header{
       position:sticky;
       top:0;
       z-index:50;
-      background:#ffffff;                 /* clean white to match logo */
+      background:#ffffff;
       border-bottom:1px solid rgba(15,23,42,.08);
-      padding: 8px 0;                     /* tighter + cleaner */
+      padding: 8px 0;
     }
     .nav{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding: 6px 0;                     /* removed extra padding */
+      padding: 6px 0;
     }
     .brand{display:flex;align-items:center;}
     .site-logo{
-      height:72px;                        /* desktop */
+      height:72px;
       width:auto;
       display:block;
       object-fit:contain;
@@ -72,17 +111,17 @@
     }
 
     /* Hero */
-    .hero{padding:48px 0 32px;} /* more top/bottom balance */
+    .hero{padding:48px 0 32px;}
     .hero-wrap{display:grid;grid-template-columns:1fr;gap:20px;}
-    .hero-left{padding:0;max-width:820px;} /* remove extra inner padding */
+    .hero-left{padding:0;max-width:900px;}
     .hero-left .pill{margin-bottom:16px;}
     .hero-left h1{margin-bottom:16px;}
-    .hero-left .lead{font-size:16px;max-width:70ch;line-height:1.7;}
+    .hero-left .lead{font-size:16px;max-width:75ch;line-height:1.75;}
 
     /* Sections */
     section{padding:34px 0;}
     .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:16px;}
-    .section-head p{max-width:62ch;}
+    .section-head p{max-width:70ch;}
 
     .features{grid-template-columns:repeat(3,1fr);}
     .features .card{background:#fff;}
@@ -132,6 +171,25 @@
 
     [id]{scroll-margin-top:88px;}
   </style>
+
+  <!-- ✅ SEO: Structured data (helps Google understand your business) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Claimanage",
+    "url": "https://www.claimanage.com/",
+    "telephone": "+61406359394",
+    "areaServed": "Australia",
+    "serviceType": [
+      "Insurance claim review",
+      "Insurance claim management",
+      "Claim negotiation",
+      "Dispute support",
+      "AFCA complaint management"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -156,8 +214,16 @@
         <div class="hero-wrap">
           <div class="hero-left">
             <span class="pill">Professional claim advocacy</span>
-            <h1>We manage your insurance claim, end-to-end.</h1>
-            <p class="lead">From review to dispute to settlement, we provide end-to-end insurance claims management for individuals, drivers, and businesses. Our approach focuses on clear advice, structured evidence, and professional insurer communication to ensure each claim is handled properly and progressed with purpose.</p>
+
+            <!-- ✅ SEO: Stronger H1 (Google reads this) -->
+            <h1>Insurance claim management, negotiation & dispute support.</h1>
+
+            <!-- ✅ SEO: Slightly improved lead copy (more keywords, still natural) -->
+            <p class="lead">
+              Claimanage provides end-to-end insurance claims management for individuals, drivers, and businesses.
+              From claim pre-review to negotiation, dispute support, and AFCA complaints, we focus on clear documentation,
+              structured evidence, and professional insurer communication to help progress your claim with purpose.
+            </p>
           </div>
         </div>
       </div>
@@ -352,7 +418,6 @@
             <p class="fine" style="margin-top:6px;">Send us your details and we’ll respond shortly.</p>
 
             <form id="enquiryForm" action="https://formspree.io/f/xeeeerjk" method="POST" style="margin-top:12px;display:grid;gap:12px;">
-              <!-- Spam protection (hidden field) -->
               <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
               <div class="two">
@@ -390,7 +455,6 @@
                 <textarea id="message" name="message" placeholder="Tell us what happened, the insurer’s position, and what outcome you’re seeking..." required></textarea>
               </div>
 
-              <!-- Optional: email subject shown in your inbox -->
               <input type="hidden" name="_subject" value="New enquiry — Claimanage website">
 
               <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
@@ -427,14 +491,11 @@
   </footer>
 
   <script>
-    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // === Simple in-page tests (won't affect users) ===
     console.assert(!!document.getElementById('enquiryForm'), 'Enquiry form should exist');
     console.assert(!!document.getElementById('thankYouMessage'), 'Thank you message container should exist');
 
-    // === Formspree submit (no mail app opens) ===
     const form = document.getElementById('enquiryForm');
     const thankYou = document.getElementById('thankYouMessage');
     const statusEl = document.getElementById('formStatus');
@@ -450,7 +511,6 @@
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // If Formspree is not configured yet, show a helpful message.
         const action = form.getAttribute('action') || '';
         if (action.includes('REPLACE_WITH_YOUR_FORM_ID')) {
           setStatus('Form is not connected yet. Replace the Formspree form ID in the code, then try again.', true);
@@ -486,4 +546,3 @@
   </script>
 </body>
 </html>
-
